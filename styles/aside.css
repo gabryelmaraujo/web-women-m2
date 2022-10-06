@@ -1,0 +1,48 @@
+
+@media (max-width: 700px){
+
+    .selectedJobs {
+        height: 22.938em;
+
+        padding: 2em;
+        margin-top: 2.25em;
+    }
+
+    .asideTitleDiv{
+        margin-bottom: 2em;
+    }
+
+    .asideTitleDiv h2{
+        font-size: var(--title-4);
+        font-weight: 600;
+    }
+
+    .selectedLi{
+        padding: 0.938em;
+    }
+
+    .selectedLiHeader {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.25em;
+    }
+
+    .selectedRemove{
+        width: 44px;
+        height: 38px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .selectedTitle {
+        font-size: var(--title-5);
+        font-weight: 600;
+    }
+
+    .selectedCompany{
+        display: flex;
+        color: var(--color-grey-2);
+        font-size: var(--text-3);
+    }
+
+}

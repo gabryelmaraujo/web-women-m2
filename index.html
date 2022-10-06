@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="/styles/button.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/texts.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/aside.css">
 
 
     <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
@@ -44,7 +47,96 @@
       </div>
     </header>
 
-    <main></main>
+    <main class="container">
+
+      <section class="mainTitle">
+        <h2>Vagas</h2>
+      </section>
+      
+      <section class="cardsSection">
+        <ul class="cardsUl">
+          <li class="cardLi">
+            <div class="jobTitle">
+              <p>Pessoa desenvolvedora front-end - React JS</p>
+            </div>
+            <div class="companyInfos">
+              <p class="companyName">Kenzie Academy</p>
+              <p class="companyCity">Curitiba</p>
+            </div>
+            <div class="jobDescript">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div class="jobType">
+              <p>Home Office</p>
+            </div>
+            <div class="applyButton">
+              <button type="submit">Candidatar</button>
+            </div>
+          </li>
+
+          <li class="cardLi">
+            <div class="jobTitle">
+              <p>Pessoa desenvolvedora front-end - React JS</p>
+            </div>
+            <div class="companyInfos">
+              <p class="companyName">Kenzie Academy</p>
+              <p class="companyCity">Curitiba</p>
+            </div>
+            <div class="jobDescript">
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div class="jobType">
+              <p>Home Office</p>
+            </div>
+            <div class="applyButton">
+              <button type="submit">Candidatar</button>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="asideSection">
+        <aside class="selectedJobs">
+          <div class="asideTitleDiv">
+            <h2>Vagas selecionadas</h2>
+          </div>
+          <div class="asideMain">
+            <ul class="selectedUl">
+              <li class="selectedLi">
+                <div class="selectedLiHeader">
+                  <p class="selectedTitle">Pessoa desenvolvedora front-end - React JS</p>
+                  <button class="selectedRemove">
+                    <img src="/assets/img/trash.svg" alt="">
+                  </button>
+                </div>
+                <div class="selectedCompany">
+                  <p class="companyName">Kenzie Academy</p>
+                  <p class="companyCity">Curitiba</p>
+                </div>
+              </li>
+
+              <li class="selectedLi">
+                <div class="selectedLiHeader">
+                  <p class="selectedTitle">Pessoa desenvolvedora front-end - React JS</p>
+                  <button class="selectedRemove">
+                    <img src="/assets/img/trash.svg" alt="">
+                  </button>
+                </div>
+                <div class="selectedCompany">
+                  <p class="companyName">Kenzie Academy</p>
+                  <p class="companyCity">Curitiba</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        
+        </aside>
+
+      </section>
+
+    </main>
 
 
     <script src="/pages/home/jobsData.js"></script>
