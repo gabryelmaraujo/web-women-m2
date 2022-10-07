@@ -56,7 +56,78 @@ function jobsRender(arr = jobsData){
 
                 let applyButton = document.createElement('button')
                     applyButton.type = 'submit'
-                    applyButton.innerText = 'Candidatar'
+                    // applyButton.innerText = 'Candidatar'
+
+//APPLY BUTTON EVENT
+
+if(alreadyApply(job) >= 0){
+    applyButton.innerText = 'Remover candidatura'
+}else{
+    applyButton.innerText = 'Candidatar'
+    
+}
+
+applyButton.addEventListener('click', ()=>{
+    applyAndRemove(job, applyButton)
+    if(applyButton.innerText == 'Remover candidatura'){
+        let asideUl = document.querySelector('.selectedUl')
+
+        let asideLi = document.createElement('li')
+            asideLi.classList.add('selectedLi')
+            asideLi.id = id
+    
+            let asideHeaderDiv = document.createElement('div')
+                asideHeaderDiv.classList.add('selectedLiHeader')
+    
+                let asideHeaderTitle = document.createElement('p')
+                    asideHeaderTitle.classList.add('selectedTitle')
+                    asideHeaderTitle.innerText = title
+    
+                let bttnRemove = document.createElement('button')
+                    bttnRemove.classList.add('selectedRemove')
+                    
+                    let imgRemove = document.createElement('img')
+                        imgRemove.src = "/assets/img/trash.svg"
+                        imgRemove.alt = 'Remover vaga'
+                //BTTN REMOVE EVENT
+                    bttnRemove.addEventListener('click', ()=>{
+                        asideLi.remove()
+                        let jobIndex = selectedJobs.indexOf(job)
+                        selectedJobs.splice(jobIndex)
+                    })
+    
+    
+            let companyDiv = document.createElement('div')
+                companyDiv.classList.add('selectedCompany')
+    
+                let companyName = document.createElement('p')
+                    companyName.classList.add('companyName')
+                    companyName.innerText = enterprise
+    
+                let companyCity = document.createElement('p')
+                    companyCity.classList.add('companyCity')
+                    companyCity.innerText = location
+    
+    //APPENDS
+    companyDiv.append(companyName, companyCity)
+    
+    bttnRemove.append(imgRemove)
+    asideHeaderDiv.append(asideHeaderTitle, bttnRemove)
+    
+    asideLi.append(asideHeaderDiv, companyDiv)
+    
+    asideUl.append(asideLi)
+    }else{
+        let selectedUl = document.querySelector('.selectedUl')
+            ulChilds = Array.from(selectedUl.children)
+            ulChilds.forEach((li)=>{
+                if(li.id == id){
+                    li.remove()
+                }
+            })
+    }
+
+})
 
 //APPENDS
 applyButtonDiv.append(applyButton)
@@ -79,3 +150,4 @@ cardsUl.append(cardLi)
 
 }
 jobsRender()
+
