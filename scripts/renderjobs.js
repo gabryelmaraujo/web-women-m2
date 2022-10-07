@@ -152,13 +152,13 @@ cardsUl.append(cardLi)
 }
 jobsRender()
 
-function cardsUlEmpty(){
-    const cardsUl = document.querySelector('.selectedUl')
-    const emptyUlParag = document.querySelector('.emptyUlParag')
-    if(cardsUl.childElementCount == 0){
-        emptyUlParag.classList.add('emptyUlHidden')
-    }else{
-        emptyUlParag.classList.remove('emptyUlHidden')
-    }
-}
-cardsUlEmpty()
+// function cardsUlEmpty(){
+//     const cardsUl = document.querySelector('.selectedUl')
+//     const emptyUlParag = document.querySelector('.emptyUlParag')
+//     if(cardsUl.childElementCount == 0){
+//         emptyUlParag.classList.add('emptyUlHidden')
+//     }else{
+//         emptyUlParag.classList.remove('emptyUlHidden')
+//     }
+// }
+// cardsUlEmpty()
