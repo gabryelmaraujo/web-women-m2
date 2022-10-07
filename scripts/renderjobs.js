@@ -91,9 +91,9 @@ applyButton.addEventListener('click', ()=>{
                         imgRemove.alt = 'Remover vaga'
                 //BTTN REMOVE EVENT
                     bttnRemove.addEventListener('click', ()=>{
+                        applyAndRemove(job, applyButton)
+                        
                         asideLi.remove()
-                        let jobIndex = selectedJobs.indexOf(job)
-                        selectedJobs.splice(jobIndex)
                     })
     
     
