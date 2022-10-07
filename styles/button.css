@@ -1,6 +1,6 @@
 
 @media (max-width:700px){
-    .headerButton button{
+    .headerButton a{
         width: 100%;
         padding: 16px;
 
@@ -14,6 +14,7 @@
         border: none;
 
         cursor: pointer;
+        text-decoration: none;
     }
 
     .applyButton button{
@@ -31,4 +32,25 @@
 
         cursor: pointer;
     }
+}
+
+@media (min-width: 700px){
+
+    .headerButton a{
+        padding: 16px;
+
+        font-size: var(--text-1);
+        font-weight: 500;
+
+        background-color: var(--color-brand-1);
+        color: var(--color-grey-6);
+
+        border-radius: 8px;
+        border: none;
+
+        cursor: pointer;
+
+        text-decoration: none;
+    }
+
 }

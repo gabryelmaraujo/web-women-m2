@@ -30,3 +30,31 @@
 
 
 }
+
+h1{
+    color: var(--color-grey-6);
+    font-size: var(--title-1);
+}
+
+.spanParag{
+    color: var(--color-grey-6);
+    font-size: var(--title-3);
+}
+
+.descripParag{
+    font-size: var(--title-5);
+    color: var(--color-grey-6);
+    line-height: 27px;
+}
+
+.checkParag{
+    font-size: var(--title-4);
+    color: var(--color-grey-6);
+    line-height: 27px;
+}
+
+.mainTitle h2{
+    color: var(--color-grey-1);
+    font-size: var(--title-4);
+    font-weight: 600;
+}

@@ -33,3 +33,48 @@
 
 
 }
+
+@media (min-width:700px){
+    header{
+        max-width: 100%;
+        height: 49.313em;
+        background-image: url("/assets/img/Pexels Photo by Christina Morillo.svg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .backgroundColor{
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 0;
+    }
+
+    header main {
+        position: absolute;
+        padding: 0 100px;
+    }
+
+    .logoSection{
+        margin-bottom: 3.75em;
+        margin-top: 10em;
+        padding-left: 6.25em;
+    }
+    
+    .spanParag{
+        padding-left: 6.25rem;
+    }
+
+    .descriptionDiv {
+        margin-top: 2em;
+        margin-bottom: 3.75em;
+        padding-left: 6.25em;
+    }
+
+    .descripParag {
+        margin-bottom: 2em;
+    }
+
+    .headerButton{
+        padding-left: 6.25em;
+    }
+}
