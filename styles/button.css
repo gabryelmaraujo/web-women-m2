@@ -53,4 +53,19 @@
         text-decoration: none;
     }
 
+    .applyButton button{
+        width: 100%;
+        padding: 0 28px;
+
+        font-size: var(--text-1);
+        font-weight: 500;
+
+        background-color: var(--color-brand-1);
+        color: var(--color-grey-6);
+
+        border-radius: 8px;
+        border: none;
+
+        cursor: pointer;
+    }
 }

@@ -44,3 +44,56 @@
         font-size: var(--text-3);
     }
 }
+
+@media (min-width: 700px){
+    .cardLi{
+        padding: 2.375em;
+        margin-bottom: 2em;
+    }
+
+    .jobTitle p {
+        font-size: var(--title-5);
+        font-weight: 600;
+        line-height: 2.063em;
+
+        margin-bottom: 1.125em;
+    }
+
+    .companyInfos {
+        display: flex;
+        color: var(--color-grey-2);
+        font-size: var(--text-3);
+    }
+    
+    .companyName{
+        margin-right: 2em;
+        margin-bottom: 1.75em;
+    }
+
+    .jobDescript {
+        margin-bottom: 1.75em;
+        color: var(--color-grey-2);
+
+        font-size: var(--text-2);
+        line-height: 32px;
+    }
+
+    .cardFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .jobType {
+
+        background-color: var(--color-grey-3);
+        color: var(--color-grey-2);
+        width: 115px;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .jobType p {
+        font-size: var(--text-3);
+    }
+}

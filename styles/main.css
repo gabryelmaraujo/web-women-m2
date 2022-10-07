@@ -4,3 +4,23 @@
         margin-bottom: 2.813em;
     }
 }
+
+.mainTitle {
+    margin-top: 2.813em;
+    margin-bottom: 2.813em;
+}
+
+@media (min-width: 700px){
+
+    .container{
+        width: 43.75em;
+        margin: 100px;
+        max-width: 100%;
+    }
+
+    .cardsSection {
+        height: 700px;
+        overflow: auto;
+    }
+
+}
