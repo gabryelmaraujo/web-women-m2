@@ -102,3 +102,7 @@
         font-size: var(--text-3);
     }
 }
+
+.emptyUlHidden{
+    display: none;
+}

@@ -42,6 +42,8 @@ if(appliedList){
                         imgRemove.alt = 'Remover vaga'
                 //BTTN REMOVE EVENT
                     bttnRemove.addEventListener('click', ()=>{
+                        const applyButton = document.querySelector('.applyBttn')
+
                         applyAndRemove(job, applyButton)
                         
                         asideLi.remove()
